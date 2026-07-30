@@ -8,7 +8,8 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#fbfcfe]">
+    <>
+      <main className="min-h-screen bg-[#fbfcfe]">
       <header className="site-header">
         <div className="nav-container">
           <a className="brand" href="/" aria-label="미리 묻다 홈">
@@ -300,6 +301,40 @@ export default function Home() {
           <a className="closing-cta-link" href="#report">샘플 결과 먼저 보기 <span aria-hidden="true">→</span></a>
         </div>
       </section>
-    </main>
+      </main>
+
+      <footer className="site-footer">
+        <div className="footer-container">
+          <div className="footer-main">
+            <div className="footer-brand-block">
+              <a className="footer-brand" href="/" aria-label="미리 묻다 홈">
+                <img src="/logo-mark.svg" alt="" width="54" height="54" />
+                <strong>미리 묻다</strong>
+              </a>
+              <p>만들기 전에, AI 고객에게 먼저 묻는 구매 인사이트 서비스</p>
+            </div>
+
+            <nav className="footer-nav" aria-label="푸터 메뉴">
+              <div>
+                <h2>서비스</h2>
+                <a href="#service">서비스 소개</a>
+                <a href="#report">결과 예시</a>
+                <a href="#closing-cta">요금 안내</a>
+              </div>
+              <div>
+                <h2>지원</h2>
+                <a href="#faq">자주 묻는 질문</a>
+                <a href="#closing-cta">문의하기</a>
+              </div>
+            </nav>
+          </div>
+
+          <div className="footer-bottom">
+            <p>© 2026 미리 묻다. All rights reserved.</p>
+            <nav aria-label="정책 메뉴"><a href="#terms">이용약관</a><span aria-hidden="true" /> <a href="#privacy">개인정보처리방침</a></nav>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 }
