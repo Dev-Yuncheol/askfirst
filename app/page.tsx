@@ -245,6 +245,41 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="faq-section" id="faq">
+        <div className="faq-container">
+          <aside className="faq-intro">
+            <p className="faq-kicker">FAQ</p>
+            <span className="faq-kicker-line" aria-hidden="true" />
+            <h2>시작하기 전에<br />궁금한 점</h2>
+            <span className="faq-divider-line" aria-hidden="true" />
+            <p className="faq-notice"><b aria-hidden="true">*</b><span>합성 페르소나의 의견은<br />의사결정을 돕는 참고 자료이며,<br />실제 고객 조사를 완전히<br />대체하지 않습니다.</span></p>
+            <a className="faq-contact" href="#start">더 궁금한 점 문의하기 <span aria-hidden="true">→</span></a>
+          </aside>
+
+          <div className="faq-list">
+            <details className="faq-item">
+              <summary><span className="faq-number">01</span><strong>어떤 상품을 테스트할 수 있나요?</strong><span className="faq-toggle" aria-hidden="true" /></summary>
+              <p className="faq-answer">식품, 뷰티, 생활용품, 디지털 서비스 등 다양한 상품을 테스트할 수 있습니다.</p>
+            </details>
+            <details className="faq-item" open>
+              <summary><span className="faq-number">02</span><strong>AI 고객은 어떻게 구성되나요?</strong><span className="faq-toggle" aria-hidden="true" /></summary>
+              <p className="faq-answer">상품과 타깃 조건을 바탕으로 연령, 라이프스타일, 구매 성향이 다른 페르소나를 구성합니다.</p>
+            </details>
+            <details className="faq-item">
+              <summary><span className="faq-number">03</span><strong>결과는 얼마나 빨리 나오나요?</strong><span className="faq-toggle" aria-hidden="true" /></summary>
+              <p className="faq-answer">상품 정보를 입력하면 짧은 시간 안에 AI 고객의 반응과 주요 인사이트를 확인할 수 있습니다.</p>
+            </details>
+            <details className="faq-item">
+              <summary><span className="faq-number">04</span><strong>입력한 상품 정보는 안전한가요?</strong><span className="faq-toggle" aria-hidden="true" /></summary>
+              <p className="faq-answer">입력한 정보는 테스트 결과 생성에만 사용되며 안전하게 관리됩니다.</p>
+            </details>
+            <details className="faq-item">
+              <summary><span className="faq-number">05</span><strong>실제 고객 조사와 무엇이 다른가요?</strong><span className="faq-toggle" aria-hidden="true" /></summary>
+              <p className="faq-answer">더 빠르고 간편하게 초기 반응을 살펴볼 수 있지만, 실제 고객 조사를 완전히 대체하지는 않습니다.</p>
+            </details>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
