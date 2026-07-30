@@ -67,10 +67,7 @@ export default function Home() {
                 <span className="people-icon" aria-hidden="true"><i /><i /><i /></span>
                 <strong>AI 고객 24명</strong>
               </div>
-              <div className="network-path path-top-left" aria-hidden="true" />
-              <div className="network-path path-top-right" aria-hidden="true" />
-              <div className="network-path path-bottom-left" aria-hidden="true" />
-              <div className="network-path path-bottom-right" aria-hidden="true" />
+
               <div className="customer-list">
                 {customers.map((customer) => (
                   <article className={`customer ${customer.className}`} key={customer.title}>
