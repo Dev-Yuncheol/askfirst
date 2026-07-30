@@ -68,6 +68,15 @@ export default function Home() {
                 <strong>AI 고객 24명</strong>
               </div>
 
+              <div className="network-branches" aria-hidden="true">
+                <span className="branch-line branch-top-left" />
+                <span className="branch-line branch-top-center" />
+                <span className="branch-line branch-top-right" />
+                <span className="branch-line branch-bottom-left" />
+                <span className="branch-line branch-bottom-center" />
+                <span className="branch-line branch-bottom-right" />
+              </div>
+
               <div className="customer-list">
                 {customers.map((customer) => (
                   <article className={`customer ${customer.className}`} key={customer.title}>
