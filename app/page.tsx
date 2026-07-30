@@ -280,6 +280,26 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="closing-cta-section" id="closing-cta">
+        <div className="closing-cta-container">
+          <p className="closing-cta-eyebrow">READY WHEN YOU ARE</p>
+          <h2>다음 결정은, 고객에게 먼저 물어보세요</h2>
+          <p className="closing-cta-description">상품 링크나 간단한 설명만 있으면 시작할 수 있습니다.</p>
+
+          <form className="closing-cta-form" action="#start" method="get">
+            <label className="closing-cta-input-wrap">
+              <span className="sr-only">상품 링크 또는 설명</span>
+              <span className="closing-link-icon" aria-hidden="true"><i /><i /></span>
+              <input name="product" type="text" placeholder="상품 링크 또는 설명을 입력하세요" aria-label="상품 링크 또는 설명을 입력하세요" />
+            </label>
+            <button type="submit">무료로 의견 받기</button>
+          </form>
+
+          <p className="closing-cta-benefit">카드 등록 없이 시작 · 평균 3분 내 결과</p>
+          <p className="closing-cta-status"><span aria-hidden="true" />AI 고객 준비됨</p>
+          <a className="closing-cta-link" href="#report">샘플 결과 먼저 보기 <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
     </main>
   );
 }
