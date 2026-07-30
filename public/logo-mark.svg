@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" role="img" aria-labelledby="logo-mark-title">
+  <title id="logo-mark-title">미리 묻다 로고 심볼</title>
+  <g fill="#1467E8">
+    <circle cx="6" cy="6" r="5" />
+    <circle cx="24" cy="6" r="5" />
+    <circle cx="42" cy="6" r="5" />
+    <circle cx="6" cy="24" r="5" />
+    <circle cx="24" cy="24" r="5" />
+    <circle cx="42" cy="24" r="5" />
+    <circle cx="6" cy="42" r="5" />
+    <circle cx="24" cy="42" r="5" />
+    <circle cx="42" cy="42" r="5" />
+  </g>
+</svg>
