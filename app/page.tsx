@@ -197,6 +197,54 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="insight-results-section" id="report">
+        <div className="insight-results-container">
+          <div className="report-showcase">
+            <article className="report-paper" aria-label="신제품 구매 의향 리포트 첫 페이지">
+              <header className="report-header">
+                <div><span>AI CUSTOMER RESEARCH</span><h2>신제품 구매 의향 리포트</h2></div>
+                <dl><div><dt>조사 기간</dt><dd>2026.07.21 – 07.28</dd></div><div><dt>응답자 수</dt><dd>1,248명 · 합성 고객</dd></div></dl>
+              </header>
+
+              <section className="report-block">
+                <h3>구매 의향</h3>
+                <div className="purchase-bar"><b>68%</b><b>22%</b><b>10%</b></div>
+                <div className="purchase-legend"><span><i className="legend-positive" />긍정 <small>구매 의향 있음</small></span><span><i className="legend-neutral" />중립 <small>상황에 따라 다름</small></span><span><i className="legend-negative" />부정 <small>구매 의향 낮음</small></span></div>
+              </section>
+
+              <section className="report-block persona-report-block">
+                <h3>페르소나별 의견</h3>
+                <div className="report-personas">
+                  <article><span>실용 추구형 <b>32%</b></span><p>“수납이 간결하고<br />사용이 편해 보여요.”</p></article>
+                  <article className="is-highlighted"><span>가성비 중시형 <b>28%</b></span><p>“가격은 괜찮지만<br />내구성이 궁금해요.”</p></article>
+                  <article><span>신중 구매형 <b>22%</b></span><p>“다른 제품과 비교 후<br />결정할 것 같아요.”</p></article>
+                </div>
+              </section>
+
+              <section className="report-block matrix-report-block">
+                <h3>기대 요인 vs 망설임 요인 <small>우선순위 매트릭스</small></h3>
+                <div className="report-matrix">
+                  <div><span className="matrix-dot blue" />프리미엄 소재</div>
+                  <div className="matrix-focus"><span className="matrix-dot navy" />내구성 <span className="matrix-dot blue" />디자인·휴대성</div>
+                  <div><span className="matrix-dot gray" />색상 옵션</div>
+                  <div className="matrix-risk"><span className="matrix-dot red" />가격 경쟁력<br /><span className="matrix-dot red" />상세 정보 부족</div>
+                </div>
+                <div className="matrix-axis"><span>낮은 언급 빈도</span><span>높은 언급 빈도 →</span></div>
+              </section>
+            </article>
+          </div>
+
+          <div className="insight-results-copy">
+            <p className="results-kicker">INSIGHT RESULTS</p>
+            <span className="results-kicker-line" aria-hidden="true" />
+            <h2>숫자 뒤에 숨은<br />‘왜’를 읽습니다</h2>
+            <p className="results-description">찬반 비율만 보여주지 않습니다.<br />누가, 어떤 맥락에서, 무엇을 망설였는지<br />한눈에 확인하세요.</p>
+            <div className="results-tip"><span aria-hidden="true">✦</span><strong>꼭 상품에 관한 이미지와 자세한 설명이 있어야 좋은 분석을 받을 수 있습니다.</strong></div>
+            <a className="results-button" href="#report">샘플 리포트 보기 <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
