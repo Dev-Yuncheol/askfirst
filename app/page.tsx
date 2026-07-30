@@ -71,6 +71,7 @@ export default function Home() {
               <div className="network-branches" aria-hidden="true">
                 <span className="branch-line branch-top-left" />
                 <span className="branch-line branch-top-center" />
+                <span className="branch-line branch-top-middle" />
                 <span className="branch-line branch-top-right" />
                 <span className="branch-line branch-bottom-left" />
                 <span className="branch-line branch-bottom-center" />
