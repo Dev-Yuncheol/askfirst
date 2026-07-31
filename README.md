@@ -16,12 +16,11 @@
 - [Next.js](https://nextjs.org/) 16
 - [React](https://react.dev/) 19
 - [Tailwind CSS](https://tailwindcss.com/) 4
-- [vinext](https://github.com/cloudflare/vinext) (Vite 기반 로컬/빌드)
 - TypeScript
 
 ## 사전 요구사항
 
-- Node.js `>= 22.13.0`
+- Node.js `>= 20.9.0`
 - pnpm (권장)
 
 ## 시작하기
@@ -34,7 +33,7 @@ pnpm install
 pnpm run dev
 ```
 
-브라우저에서 [http://localhost:3000](http://localhost:3000) 으로 접속합니다. 포트가 사용 중이면 다른 포트로 열릴 수 있습니다.
+브라우저에서 [http://localhost:3000](http://localhost:3000) 으로 접속합니다.
 
 ## 스크립트
 
@@ -44,7 +43,10 @@ pnpm run dev
 | `pnpm run build` | 프로덕션 빌드 |
 | `pnpm run start` | 빌드 결과 실행 |
 | `pnpm run lint` | ESLint 검사 |
-| `pnpm run test` | 빌드 후 HTML 렌더 테스트 |
+
+## 배포 (Vercel)
+
+GitHub에 푸시한 뒤 [Vercel](https://vercel.com)에서 프로젝트를 연결하면 됩니다. Framework Preset은 Next.js, Build Command는 `next build`(또는 `pnpm build`)입니다.
 
 ## 프로젝트 구조
 
@@ -55,8 +57,6 @@ askfirst/
 │   ├── layout.tsx       # 루트 레이아웃
 │   └── globals.css      # 공통 스타일
 ├── public/              # 정적 에셋 (로고, 상품/아바타 이미지)
-├── db/                  # Drizzle 스키마 (선택)
-├── tests/               # 테스트
 └── package.json
 ```
 

@@ -15,8 +15,8 @@
 
 # next.js
 /.next/
-/.vinext/
 /out/
+/dist/
 
 # misc
 .DS_Store
@@ -34,12 +34,11 @@ yarn-error.log*
 # vercel
 .vercel
 
+# leftover local tooling
+/.wrangler/
+
 # typescript
 next-env.d.ts
-/dist/
-/.wrangler/
-/outputs/
-/work/
 
 # local design references and preview process files
 /output/
