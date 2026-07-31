@@ -1,10 +1,35 @@
 export default function Home() {
-  const customers = [
-    { className: "customer-practical", image: "/avatar-practical-worker-m30.png", title: "꼼꼼한 실용가", detail: "30대 · 직장인" },
-    { className: "customer-design", image: "/avatar-design-student-f20.png", title: "디자인 중시형", detail: "20대 · 대학생" },
-    { className: "customer-value", image: "/avatar-value-owner-m40.png", title: "가성비 추구형", detail: "40대 · 자영업" },
-    { className: "customer-eco", image: "/avatar-eco-freelancer-f30.png", title: "환경 가치 소비형", detail: "30대 · 프리랜서" },
-    { className: "customer-gift", image: "/avatar-gift-worker-m20.png", title: "선물 고려형", detail: "20대 · 사회초년생" },
+  const aiResponses = [
+    {
+      image: "/avatar-design-student-f20.png",
+      persona: "디자인 중시 20대 여대생",
+      quote: "디자인은 깔끔한데, 가방에 넣었을 때 부피가 걱정돼요.",
+      tags: ["디자인", "휴대성"],
+    },
+    {
+      image: "/avatar-practical-worker-m30.png",
+      persona: "꼼꼼한 30대 직장인",
+      quote: "풍량은 좋아 보이지만, 사무실에서 쓸 때 소음이 궁금해요.",
+      tags: ["풍량", "소음"],
+    },
+    {
+      image: "/avatar-value-owner-m40.png",
+      persona: "가성비 중시 40대 자영업",
+      quote: "가격 대비 배터리 20시간이면 설득력은 있어요.",
+      tags: ["가격", "배터리"],
+    },
+    {
+      image: "/avatar-eco-freelancer-f30.png",
+      persona: "환경 가치 30대 프리랜서",
+      quote: "교체형 배터리나 수리 가능 여부가 있으면 더 끌릴 것 같아요.",
+      tags: ["지속가능성", "수명"],
+    },
+  ];
+
+  const insightBars = [
+    { label: "풍량 만족", value: 71 },
+    { label: "휴대성", value: 58 },
+    { label: "배터리 지속", value: 43 },
   ];
 
   return (
@@ -40,87 +65,95 @@ export default function Home() {
 
       <section className="hero-section" id="service">
         <div className="hero-container">
-          <div className="hero-visual" aria-label="상품 정보가 AI 고객 의견과 핵심 인사이트로 연결되는 과정">
-            <div className="visual-grid" aria-hidden="true" />
-            <div className="orbit orbit-outer" aria-hidden="true" />
-            <div className="orbit orbit-middle" aria-hidden="true" />
-            <div className="orbit orbit-inner" aria-hidden="true" />
+          <div className="hero-copy">
+            <h1>출시 전에, 고객에게 먼저 묻다</h1>
+            <p className="hero-description">상품 정보를 입력하면 다양한 AI 고객이 구매자의 시선으로 답합니다.</p>
+            <div className="hero-actions">
+              <a className="hero-primary-button" id="start" href="#closing-cta">무료로 의견 받아보기</a>
+              <a className="hero-secondary-button" href="#report">데모 살펴보기</a>
+            </div>
+          </div>
 
-            <div className="product-area">
-              <p className="visual-title">상품 정보</p>
-              <article className="product-card">
-                <div className="product-image-wrap">
+          <div className="hero-flow" aria-label="상품 정보가 AI 고객 의견과 핵심 인사이트로 연결되는 과정">
+            <div className="hero-flow-stage hero-flow-product">
+              <p className="hero-flow-label">신제품 콘셉트 분석</p>
+              <article className="hero-product-panel">
+                <p className="hero-status"><span aria-hidden="true" />제출 완료</p>
+                <div className="hero-product-image">
                   <img src="/product-portable-fan-white.png" alt="화이트 휴대용 선풍기" />
                 </div>
-                <div className="product-copy">
+                <div className="hero-product-meta">
                   <strong>화이트 휴대용 선풍기</strong>
                   <span>3단 풍속, 최대 20시간 사용</span>
-                  <span>저소음 · USB-C 충전</span>
                 </div>
-                <span className="document-icon" aria-hidden="true"><i /><i /><i /></span>
+                <dl className="hero-product-specs">
+                  <div><dt>카테고리</dt><dd>생활가전</dd></div>
+                  <div><dt>타깃 고객</dt><dd>20-40대 직장인·학생</dd></div>
+                  <div><dt>가격</dt><dd>39,000원</dd></div>
+                  <div><dt>핵심 강점</dt><dd>저소음, 장시간 배터리, USB-C</dd></div>
+                  <div><dt>출시 예정</dt><dd>2026.08</dd></div>
+                </dl>
               </article>
             </div>
 
-            <div className="product-connector" aria-hidden="true"><span className="connector-node" /></div>
+            <div className="hero-flow-connector hero-flow-connector-left" aria-hidden="true">
+              <span className="hero-flow-line" />
+              <span className="hero-flow-node" />
+            </div>
 
-            <div className="customer-network">
-              <div className="customer-count">
-                <span className="people-icon" aria-hidden="true"><i /><i /><i /></span>
-                <strong>AI 고객 24명</strong>
-              </div>
-
-              <div className="network-branches" aria-hidden="true">
-                <span className="branch-line branch-top-left" />
-                <span className="branch-line branch-top-center" />
-                <span className="branch-line branch-top-middle" />
-                <span className="branch-line branch-top-right" />
-                <span className="branch-line branch-bottom-left" />
-                <span className="branch-line branch-bottom-center" />
-                <span className="branch-line branch-bottom-right" />
-              </div>
-
-              <div className="customer-list">
-                {customers.map((customer) => (
-                  <article className={`customer ${customer.className}`} key={customer.title}>
-                    <img src={customer.image} alt="" />
-                    <strong>{customer.title}</strong>
-                    <span>{customer.detail}</span>
+            <div className="hero-flow-stage hero-flow-customers">
+              <p className="hero-flow-label">12명의 AI 고객 응답 중</p>
+              <div className="hero-response-grid">
+                <div className="hero-response-branches" aria-hidden="true" />
+                <div className="hero-ai-core" aria-hidden="true">✦</div>
+                {aiResponses.map((response) => (
+                  <article className="hero-response-card" key={response.persona}>
+                    <header>
+                      <img src={response.image} alt="" />
+                      <strong>{response.persona}</strong>
+                    </header>
+                    <p>“{response.quote}”</p>
+                    <ul>
+                      {response.tags.map((tag) => (
+                        <li key={tag}>{tag}</li>
+                      ))}
+                    </ul>
                   </article>
                 ))}
               </div>
             </div>
 
-            <div className="insight-connector" aria-hidden="true"><span className="connector-node" /></div>
+            <div className="hero-flow-connector hero-flow-connector-right" aria-hidden="true">
+              <span className="hero-flow-node" />
+              <span className="hero-flow-line" />
+            </div>
 
-            <div className="insight-area" id="insight">
-              <p className="visual-title">핵심 인사이트</p>
-              <article className="insight-card">
-                <div className="insight-row">
-                  <span className="sentiment-icon positive">●</span>
-                  <div><strong>긍정 의견</strong><p>강한 풍량과 휴대성에 높은 만족</p></div>
-                  <b className="positive-text">71%</b>
+            <div className="hero-flow-stage hero-flow-insight" id="insight">
+              <p className="hero-flow-label">핵심 인사이트 요약</p>
+              <article className="hero-insight-panel">
+                <div className="hero-insight-summary">
+                  <span className="hero-insight-icon" aria-hidden="true">✦</span>
+                  <p>풍량과 휴대성에 대한 기대가 가장 높았어요.</p>
                 </div>
-                <div className="insight-row">
-                  <span className="sentiment-icon neutral">−</span>
-                  <div><strong>보완 희망</strong><p>배터리 지속시간, 거치 방식</p></div>
-                  <b className="neutral-text">21%</b>
-                </div>
-                <div className="insight-row">
-                  <span className="sentiment-icon negative">!</span>
-                  <div><strong>우려 의견</strong><p>가격이 다소 높다는 의견</p></div>
-                  <b className="negative-text">8%</b>
+                <ul className="hero-insight-bars">
+                  {insightBars.map((bar) => (
+                    <li key={bar.label}>
+                      <div>
+                        <strong>{bar.label}</strong>
+                        <b>{bar.value}%</b>
+                      </div>
+                      <i style={{ ["--bar" as string]: `${bar.value}%` }} />
+                    </li>
+                  ))}
+                </ul>
+                <div className="hero-insight-notes">
+                  <strong>공통 의견</strong>
+                  <ul>
+                    <li>저소음이면 사무실·카페에서도 자주 쓸 것 같아요.</li>
+                    <li>배터리 지속 시간과 거치 방식이 구매 결정에 영향을 줘요.</li>
+                  </ul>
                 </div>
               </article>
-            </div>
-          </div>
-
-          <div className="hero-copy">
-            <p className="hero-eyebrow">출시 전에, 고객에게 먼저</p>
-            <h1>만들기 전에 <span>미리 물어보세요</span></h1>
-            <p className="hero-description">상품 정보를 입력하면 다양한 AI 고객이<br />구매자의 관점에서 솔직한 의견을 들려드려요.</p>
-            <div className="hero-actions">
-              <a className="hero-primary-button" id="start" href="#service">무료로 의견 받기</a>
-              <a className="hero-secondary-link" href="#insight">결과 예시 보기 <span aria-hidden="true">→</span></a>
             </div>
           </div>
         </div>
@@ -192,9 +225,13 @@ export default function Home() {
               <div className="result-divider" />
               <strong>핵심 근거</strong>
               <ul><li>가성비와 내구성에 긍정 의견</li><li>휴대성·디자인 만족도 높음</li><li>여행 상황에서 실용성 확보</li></ul>
-              <div className="result-score"><span>평균 만족도</span><b>+1.35 <small>/ 2</small></b><i><em /></i></div>
+              <div className="result-score">
+                <span>전체 합성 소비자 평균 만족도</span>
+                <b>+1.35 <small>/ 2</small></b>
+                <i><em /></i>
+                <p className="result-scale-note">*-2는 불만족, 0은 보통, +2는 만족을 나타냅니다.</p>
+              </div>
             </article>
-            <p className="result-time">◷&nbsp; 평균 3분 내 결과</p>
           </div>
         </div>
       </section>
@@ -205,7 +242,7 @@ export default function Home() {
             <article className="report-paper" aria-label="신제품 구매 의향 리포트 첫 페이지">
               <header className="report-header">
                 <div><span>AI CUSTOMER RESEARCH</span><h2>신제품 구매 의향 리포트</h2></div>
-                <dl><div><dt>조사 기간</dt><dd>2026.07.21 – 07.28</dd></div><div><dt>응답자 수</dt><dd>1,248명 · 합성 고객</dd></div></dl>
+                <dl><div><dt>조사 기간</dt><dd>2026.07.21</dd></div><div><dt>응답자 수</dt><dd>30명 · 합성 고객</dd></div></dl>
               </header>
 
               <section className="report-block">
@@ -295,9 +332,6 @@ export default function Home() {
             </label>
             <button type="submit">무료로 의견 받기</button>
           </form>
-
-          <p className="closing-cta-benefit">카드 등록 없이 시작 · 평균 3분 내 결과</p>
-          <p className="closing-cta-status"><span aria-hidden="true" />AI 고객 준비됨</p>
           <a className="closing-cta-link" href="#report">샘플 결과 먼저 보기 <span aria-hidden="true">→</span></a>
         </div>
       </section>
@@ -319,7 +353,6 @@ export default function Home() {
                 <h2>서비스</h2>
                 <a href="#service">서비스 소개</a>
                 <a href="#report">결과 예시</a>
-                <a href="#closing-cta">요금 안내</a>
               </div>
               <div>
                 <h2>지원</h2>
