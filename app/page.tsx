@@ -192,9 +192,8 @@ export default function Home() {
               <div className="result-divider" />
               <strong>핵심 근거</strong>
               <ul><li>가성비와 내구성에 긍정 의견</li><li>휴대성·디자인 만족도 높음</li><li>여행 상황에서 실용성 확보</li></ul>
-              <div className="result-score"><span>평균 만족도</span><b>+1.35 <small>/ 2</small></b><i><em /></i></div>
+              <div className="result-score"><span>전체 합성고객 평균 만족도</span><b>+1.35 <small>/ 2</small></b><i><em /></i></div>
             </article>
-            <p className="result-time">◷&nbsp; 평균 3분 내 결과</p>
           </div>
         </div>
       </section>
@@ -205,7 +204,7 @@ export default function Home() {
             <article className="report-paper" aria-label="신제품 구매 의향 리포트 첫 페이지">
               <header className="report-header">
                 <div><span>AI CUSTOMER RESEARCH</span><h2>신제품 구매 의향 리포트</h2></div>
-                <dl><div><dt>조사 기간</dt><dd>2026.07.21 – 07.28</dd></div><div><dt>응답자 수</dt><dd>1,248명 · 합성 고객</dd></div></dl>
+                <dl><div><dt>조사 기간</dt><dd>2026.07.21</dd></div><div><dt>응답자 수</dt><dd>30명 · 합성 고객</dd></div></dl>
               </header>
 
               <section className="report-block">
@@ -295,9 +294,6 @@ export default function Home() {
             </label>
             <button type="submit">무료로 의견 받기</button>
           </form>
-
-          <p className="closing-cta-benefit">카드 등록 없이 시작 · 평균 3분 내 결과</p>
-          <p className="closing-cta-status"><span aria-hidden="true" />AI 고객 준비됨</p>
           <a className="closing-cta-link" href="#report">샘플 결과 먼저 보기 <span aria-hidden="true">→</span></a>
         </div>
       </section>
@@ -319,7 +315,6 @@ export default function Home() {
                 <h2>서비스</h2>
                 <a href="#service">서비스 소개</a>
                 <a href="#report">결과 예시</a>
-                <a href="#closing-cta">요금 안내</a>
               </div>
               <div>
                 <h2>지원</h2>
