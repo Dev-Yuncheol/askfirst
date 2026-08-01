@@ -107,7 +107,7 @@ export default function Home() {
             </div>
 
             <div className="hero-flow-stage hero-flow-customers">
-              <p className="hero-flow-label">12명의 AI 고객 응답 중</p>
+              <p className="hero-flow-label">30명의 AI 고객 응답 중</p>
               <div className="hero-response-grid">
                 <div className="hero-response-branches" aria-hidden="true" />
                 <div className="hero-ai-core" aria-hidden="true">✦</div>
